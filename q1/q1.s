@@ -134,6 +134,8 @@ getAtMost:
     mv a0,s0
     call getAtMost
 
+    li t2,-1
+    beq a0,t2,curr #if -1 use current(for edge case of negative integers)...
     blt a0,s1,curr
     j get_done2
 
