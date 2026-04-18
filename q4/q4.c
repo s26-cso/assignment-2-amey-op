@@ -10,7 +10,7 @@ int main()
     while(scanf(" %s %d %d",o,&a,&b)==3)
     {
         char libname[20];
-        strcpy(libname,"lib");
+        strcpy(libname,"./lib");
         strcat(libname,o);
         strcat(libname,".so");
 
